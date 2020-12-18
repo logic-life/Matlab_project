@@ -1,5 +1,5 @@
 # **Ellipap 低通滤波器**
-···
+```
 %sample
 n=0:0.01:2;
 for ii=1:4
@@ -21,4 +21,4 @@ for ii=1:4
     ylabel('Ellipap|H(jw)|^2');
     grid on
 end
-···
+```
