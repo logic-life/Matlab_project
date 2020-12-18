@@ -1,4 +1,4 @@
-# ** Chebvshev_I 模拟低通滤波器 **
+# **Chebvshev_I 模拟低通滤波器**
 ```
 %sample
 n=0:0.1:2;
