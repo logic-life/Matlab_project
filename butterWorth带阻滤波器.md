@@ -1,0 +1,20 @@
+# **巴特沃斯带阻滤波器**
+```
+%sample
+n=0:0.01:2;
+[z,p,k]=buttap(6);
+[b,a]=zp2tf(z,p,k);
+[H,w]=freqs(b,a,n);
+subplot(2,1,1),plot(w,abs(H).^2);
+title('巴特沃斯滤波器(wc=1rad/s)');
+xlabel('w/wc');
+ylabel('|H(jw).^2|');
+w0=sqrt(0.7*1.5);
+Bw=1.5-0.7;
+[bt,at]=lp2bs(b,a,w0,Bw);
+[Ht,wt]=freqs(bt,at);
+subplot(2,1,2),plot(wt,abs(Ht).^2);
+title('巴特沃斯带阻滤波器(wc=0.7~1.5rad/s)');
+xlabel('wt/wc');
+ylabel('|Ht(jw).^2|');
+```
