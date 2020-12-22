@@ -1,4 +1,6 @@
 # **Matlab 学习文档**
+## 显示打印文字
+disp('显示打印文字');
 
 ## Excel 文件读取方式
 mpg_in = xlsread('mpg.xlsx');
